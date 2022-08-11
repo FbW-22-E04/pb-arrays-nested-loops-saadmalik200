@@ -26,17 +26,51 @@ for (const [i, main] of ARR.entries()) {
 
 console.log(`--------------------------------------`);
 
+let acend = "";
 for (let i = 0; i < 5; i++) {
   for (let j = 0; j < 3; j++) {
-    console.log(i);
+    acend += i + " ";
+
+    // console.log(j);
   }
 }
+console.log(acend);
 
 console.log(`--------------------------------------`);
 
+let seq = "";
 for (let i = 0; i < 3; i++) {
   for (let j = 0; j < 5; j++) {
-    console.log(j);
+    seq += j + " ";
+
+    // console.log(j);
   }
 }
+
+console.log(seq);
+
 console.log(`--------------------------------------`);
+
+let acend1 = "";
+let seq1 = "";
+for (let k = 0; k < 2; k++) {
+  if (k === 0) {
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < 3; j++) {
+        acend1 += i + " ";
+
+        // console.log(j);
+      }
+    }
+  } else {
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 5; j++) {
+        seq1 += j + " ";
+
+        // console.log(j);
+      }
+    }
+  }
+}
+console.log(acend1);
+console.log(seq1);
